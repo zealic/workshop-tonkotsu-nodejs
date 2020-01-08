@@ -39,3 +39,6 @@ npm start
 ```
 
 Follow the coach instructions and good luck!
+
+# CI Support
+CI use Github Actions
