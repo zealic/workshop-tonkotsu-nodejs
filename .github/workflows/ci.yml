@@ -10,3 +10,10 @@ jobs:
     - name: Run a multi-line script
       run: |
         docker build -t docker.pkg.github.com/zealic/workshop-tonkotsu-nodejs/web:snapshot .
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a multi-line script
+      run: |
+        npm test
