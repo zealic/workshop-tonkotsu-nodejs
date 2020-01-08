@@ -9,6 +9,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run Docker CI Build
       run: |
+        env
         docker build -t zealic/hotpot:${{ env.GITHUB_REF }} .
     - name: Docker Login
       uses: Azure/docker-login@v1
